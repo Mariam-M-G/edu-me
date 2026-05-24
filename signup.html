@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up | EduPulse</title>
+    <link rel="stylesheet" href="signup.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="signup-container">
+        <div class="signup-card">
+            <!-- Header -->
+            <div class="signup-header">
+                <div class="logo-wrapper">
+                    <img class="logo-icon" src="/images/educational-idea.png" alt="EduPulse Logo" width="90" height="80" onerror="this.style.display='none'">
+                    <span class="logo-text">EduPulse</span>
+                </div>
+                <h2>Create an account</h2>
+                <p class="subtitle">Join EduPulse and kickstart your academic journey with us! <span style="font-size: 1.5rem;">🎓🚀</span></p>
+            </div>
+
+            <!-- Sign Up Form -->
+            <form class="signup-form" id="signupForm">
+                <div class="form-row">
+                    <div class="input-group half">
+                        <label for="firstName">First Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="firstName" placeholder="Enter your first name">
+                        </div>
+                    </div>
+
+                    <div class="input-group half">
+                        <label for="lastName">Last Name</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-user input-icon"></i>
+                            <input type="text" id="lastName" placeholder="Enter your last name">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="input-group full">
+                    <label for="email">Email Address</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-envelope input-icon"></i>
+                        <input type="email" id="email" placeholder="you@example.com">
+                    </div>
+                </div>
+
+                <!-- Institution field - visible only for Faculty Member role -->
+                <div class="input-group full" id="institutionGroup" style="display: none;">
+                    <label for="institution">Institution / Organization</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-building input-icon"></i>
+                        <input type="text" id="institution" placeholder="University, College, or Organization">
+                    </div>
+                </div>
+
+                <div class="input-group full">
+                    <label for="role">Role</label>
+                    <div class="input-wrapper">
+                        <i class="fas fa-briefcase input-icon"></i>
+                        <select id="role">
+                            <option value="">Select your role</option>
+                            <option value="faculty">Faculty Member</option>
+                            <option value="student">Student</option>
+                            <option value="supervisor">Academic Supervisor</option>
+                            <option value="provider">Training Provider</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Dynamic Fields Container for Student or Training Provider specific fields -->
+                <div id="dynamicFieldsContainer" class="dynamic-fields-container"></div>
+
+                <div class="form-row">
+                    <div class="input-group half">
+                        <label for="password">Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="password" id="password" placeholder="Create a password">
+                            <button type="button" class="toggle-password" onclick="togglePassword('password', 'toggleIcon1')">
+                                <i class="fas fa-eye" id="toggleIcon1"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="input-group half">
+                        <label for="confirmPassword">Confirm Password</label>
+                        <div class="input-wrapper">
+                            <i class="fas fa-lock input-icon"></i>
+                            <input type="password" id="confirmPassword" placeholder="Confirm your password">
+                            <button type="button" class="toggle-password" onclick="togglePassword('confirmPassword', 'toggleIcon2')">
+                                <i class="fas fa-eye" id="toggleIcon2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="terms-section">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="terms">
+                        <span class="checkmark"></span>
+                        I agree to the <a href="#" onclick="showTerms(); return false;">Terms of Service</a> and <a href="#" onclick="showPrivacy(); return false;">Privacy Policy</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="signup-btn" id="signupBtn">
+                    <span>Create Account</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+            </form>
+
+            <!-- Login Link -->
+            <div class="login-link">
+                <p>Already have an account? <a href="login.html">Sign in</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast-notification"></div>
+
+    <script src="signup.js"></script>
+</body>
+</html>

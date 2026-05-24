@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>EduPulse | Intelligent Academic Early Warning System</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sticky Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-container">
+      <div class="logo-wrapper">
+        <img class="logo-icon" src="/images/educational-idea.png" alt="EduPulse Logo" width="80" height="70">
+        <span class="logo">EduPulse</span>
+      </div>
+      <ul class="nav-menu" id="nav-menu">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#how-it-works" class="nav-link">How it works</a></li>
+        <li><a href="#for-whom" class="nav-link">For whom</a></li>
+        <li><a href="#pricing" class="nav-link">Pricing</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+        <li class="mobile-buttons">
+          <button class="btn-outline" onclick="window.location.href='login.html'">Log in</button>
+          <button class="btn-primary" onclick="window.location.href='signup.html'">Sign up</button>
+        </li>
+      </ul>
+
+      <div class="nav-buttons desktop-only">
+        <button class="btn-outline" onclick="window.location.href='login.html'">Log in</button>
+        <button class="btn-primary" onclick="window.location.href='signup.html'">Sign up</button>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-bg-glow"></div>
+      <div class="container hero-container">
+        <div class="hero-text">
+          <div class="badge">AI-powered · Early warning 2.0</div>
+          <h1>Turn data into <span class="gradient-text">student success</span><br>before it's too late</h1>
+          <p>EduPulse intelligently predicts at-risk students, automates intervention workflows, and bridges academic performance with real career pathways.</p>
+          <div class="hero-buttons">
+            <button class="h-btn-primary" onclick="scrollToHowitworks()">Explore platform <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="dashboard-preview glass-panel">
+            <div class="preview-header"><i class="fas fa-chart-line"></i> Live Risk Pulse</div>
+            <div class="stat-item"><span>Attendance</span> <strong>86%</strong><div class="bar"><div class="bar-fill w86"></div></div></div>
+            <div class="stat-item"><span>Quizzes avg</span> <strong>72%</strong><div class="bar"><div class="bar-fill w72 warning"></div></div></div>
+            <div class="stat-item"><span>Assignments</span> <strong>91%</strong><div class="bar"><div class="bar-fill w91 success"></div></div></div>
+            <div class="alert-badge"><i class="fas fa-exclamation-triangle"></i> 3 students at risk — early alert active</div>
+            <div class="mini-ai">🧠 AI suggests personalized coaching for 2 students</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section about-modern">
+      <div class="container">
+        <div class="about-inner">
+          <span class="section-tag">Our mission</span>
+          <h2 class="section-title">Give every student a fair chance to succeed at scale.</h2>
+          <p class="section-sub">EduPulse is a web-based early warning ecosystem that unifies attendance, quiz scores, assignments, and exams into intelligent dashboards. Faculty spot struggling students weeks before finals, supervisors trigger proactive support, and top performers unlock matched internships.<br> No more guesswork just clarity and action.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Value Props Section -->
+    <section class="v-section">
+      <div class="container">
+        <div class="v-header">
+          <span class="section-tag">Why EduPulse</span>
+          <h2 class="section-title">Stop guessing, start knowing</h2>
+          <p class="v-section-sub">Universities are drowning in data but starving for insights. We give you real-time academic pulse.</p>
+        </div>
+        <div class="value-props">
+          <div class="vp-item"><div class="vp-icon"><img src='\images\investigation (1).png' alt="Risk Assessment" style="width:90px; margin-bottom:0.5rem;"></div><h3>Early Risk Detection</h3><p>Spot struggling students up to 8 weeks before midterms with predictive analytics.</p></div>
+          <div class="vp-item"><div class="vp-icon"><img src='\images\ai.png' alt="AI Insights" style="width:90px; margin-bottom:0.5rem;"></div><h3>AI‑Powered Insights</h3><p>Personalized feedback & adaptive study plans for each learner.</p></div>
+          <div class="vp-item"><div class="vp-icon"><img src='\images\best-employee.png' alt="Best Employee" style="width:90px; margin-bottom:0.5rem;"></div><h3>Internship Matching</h3><p>Connect top performers with leading companies & training providers.</p></div>
+          <div class="vp-item"><div class="vp-icon"><img src='\images\unified (1).png' alt="Unified Platform" style="width:90px; margin-bottom:0.5rem;"></div><h3>Unified Platform</h3><p>One collaborative space for faculty, students, supervisors & employers.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How it works (interactive steps) -->
+    <section id="how-it-works" class="section steps-section">
+      <div class="container">
+        <span class="section-tag">Simple workflow</span>
+        <h2 class="section-title">From data to student success in four steps</h2>
+        <div class="steps-container">
+          <div class="step"><img src='\images\data-collection.png' alt="Collect icon" style="width:90px; margin-bottom:0.5rem;"><h3>Collect</h3><p>Centralize attendance, grades, quiz results.</p></div>
+          <div class="step"><img src='\images\data-chart.png' alt="Analyze icon" style="width:90px; margin-bottom:0.5rem;"><h3>Analyze</h3><p>AI finds trends, creates performance profiles.</p></div>
+          <div class="step"><img src='\images\risk.png' alt="Alert icon" style="width:90px; margin-bottom:0.5rem;"><h3>Alert & Act</h3><p>Early warning flags at-risk; supervisors intervene.</p></div>
+          <div class="step"><img src='\images\community-building.png' alt="Connect icon" style="width:90px; margin-bottom:0.5rem;"><h3>Connect & Motivate</h3><p>Internship matching & personalized tips.</p></div>
+        </div>
+      </div>
+    
+    </section>
+
+    
+    <!-- For Whom Section -->
+    <section id="for-whom" class="section for-whom-section">
+      <div class="orb-1"></div>
+      <div class="orb-2"></div>
+      <div class="orb-3"></div>
+      <div class="orb-4"></div>
+      <div class="orb-5"></div>
+      
+      <div class="grid-lines">
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+        <div class="grid-line"></div>
+      </div>
+      
+      <div class="stars">
+        <div class="star" style="top: 10%; left: 15%; animation-delay: 0s;"></div>
+        <div class="star" style="top: 25%; left: 85%; animation-delay: 0.5s;"></div>
+        <div class="star" style="top: 45%; left: 10%; animation-delay: 1s;"></div>
+        <div class="star" style="top: 60%; left: 75%; animation-delay: 1.5s;"></div>
+        <div class="star" style="top: 80%; left: 30%; animation-delay: 2s;"></div>
+        <div class="star" style="top: 15%; left: 50%; animation-delay: 2.5s;"></div>
+        <div class="star" style="top: 70%; left: 90%; animation-delay: 3s;"></div>
+        <div class="star" style="top: 35%; left: 25%; animation-delay: 3.5s;"></div>
+        <div class="star" style="top: 85%; left: 60%; animation-delay: 4s;"></div>
+        <div class="star" style="top: 50%; left: 45%; animation-delay: 4.5s;"></div>
+      </div>
+      
+      <div class="waves">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+      
+      <div class="gradient-rotate"></div>
+      <div class="container">
+        <div class="fw-header">
+          <span class="section-tag-for">
+            <i class="fas fa-users"></i> Tailored for everyone
+          </span>
+          <h2 class="section-title-for">Empowering every role in your <span class="gradient-text">academic journey</span></h2>
+          <p class="fw-subtitle">One intelligent platform, five powerful perspectives united for student success.</p>
+        </div>
+        
+        <div class="persona-showcase">
+          <div class="persona-row row-3">
+            <div class="persona-card-wrapper">
+              <div class="persona-card premium-card">
+                <div class="card-badge">Faculty</div>
+                <div class="card-icon-wrapper">
+                  <div class="card-icon-bg"></div>
+                  <i class="fas fa-chalkboard-user"></i>
+                </div>
+                <h4>Faculty Members</h4>
+                <div class="card-features">
+                  <span>📊 Live Analytics</span>
+                  <span>⏱️ Auto Attendance</span>
+                  <span>🔔 Smart Alerts</span>
+                </div>
+                <p>Streamline teaching with real-time dashboards, automated grading insights, and early warning flags so you can focus on what matters most: your students.</p>
+                <div class="card-footer">
+                  <span>Explore features</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="persona-card-wrapper">
+              <div class="persona-card premium-card">
+                <div class="card-badge">Students</div>
+                <div class="card-icon-wrapper">
+                  <div class="card-icon-bg"></div>
+                  <i class="fas fa-user-graduate"></i>
+                </div>
+                <h4>Students</h4>
+                <div class="card-features">
+                  <span>📈 Progress Tracker</span>
+                  <span>🤖 AI Feedback</span>
+                  <span>💼 Internship Match</span>
+                </div>
+                <p>Take ownership of your academic journey with personalized AI recommendations, performance insights, and career opportunities tailored to your strengths.</p>
+                <div class="card-footer">
+                  <span>Explore features</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="persona-card-wrapper">
+              <div class="persona-card premium-card">
+                <div class="card-badge">Supervisors</div>
+                <div class="card-icon-wrapper">
+                  <div class="card-icon-bg"></div>
+                  <i class="fas fa-user-tie"></i>
+                </div>
+                <h4>Academic Supervisors</h4>
+                <div class="card-features">
+                  <span>🎯 Risk Maps</span>
+                  <span>⚡ Early Triage</span>
+                  <span>📋 Intervention Tools</span>
+                </div>
+                <p>Proactively support at-risk students with intelligent risk scoring, cohort heatmaps, and automated intervention workflows.</p>
+                <div class="card-footer">
+                  <span>Explore features</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="persona-row row-2">
+            <div class="persona-card-wrapper">
+              <div class="persona-card premium-card">
+                <div class="card-badge">Leadership</div>
+                <div class="card-icon-wrapper">
+                  <div class="card-icon-bg"></div>
+                  <i class="fas fa-building"></i>
+                </div>
+                <h4>Leadership</h4>
+                <div class="card-features">
+                  <span>📊 Retention Analytics</span>
+                  <span>📈 Trend Forecasting</span>
+                  <span>💰 Program ROI</span>
+                </div>
+                <p>Make data-driven decisions with institutional dashboards, retention predictions, and comprehensive program effectiveness metrics.</p>
+                <div class="card-footer">
+                  <span>Explore features</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="persona-card-wrapper">
+              <div class="persona-card premium-card">
+                <div class="card-badge">Employers</div>
+                <div class="card-icon-wrapper">
+                  <div class="card-icon-bg"></div>
+                  <i class="fas fa-briefcase"></i>
+                </div>
+                <h4>Employers & Partners</h4>
+                <div class="card-features">
+                  <span>🎯 Talent Discovery</span>
+                  <span>📝 Post Opportunities</span>
+                  <span>🚀 Pipeline Builder</span>
+                </div>
+                <p>Connect with top-performing students, post internships, and build a sustainable talent pipeline backed by academic data.</p>
+                <div class="card-footer">
+                  <span>Explore features</span>
+                  <i class="fas fa-arrow-right"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="persona-cta">
+          <div class="cta-pulse"></div>
+          <p>✨ All roles work together in real time</p>
+          <a href="#contact" class="cta-link">See how it works <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="section pricing-section">
+      <div class="pricing-orb-1"></div>
+      <div class="pricing-orb-2"></div>
+      <div class="pricing-orb-3"></div>
+      <div class="pricing-grid-lines">
+        <div class="pricing-grid-line"></div>
+        <div class="pricing-grid-line"></div>
+        <div class="pricing-grid-line"></div>
+        <div class="pricing-grid-line"></div>
+      </div>
+      <div class="pricing-stars">
+        <div class="pricing-star" style="top: 15%; left: 10%; animation-delay: 0s;"></div>
+        <div class="pricing-star" style="top: 30%; left: 85%; animation-delay: 0.5s;"></div>
+        <div class="pricing-star" style="top: 50%; left: 20%; animation-delay: 1s;"></div>
+        <div class="pricing-star" style="top: 70%; left: 75%; animation-delay: 1.5s;"></div>
+        <div class="pricing-star" style="top: 85%; left: 40%; animation-delay: 2s;"></div>
+        <div class="pricing-star" style="top: 20%; left: 50%; animation-delay: 2.5s;"></div>
+        <div class="pricing-star" style="top: 60%; left: 90%; animation-delay: 3s;"></div>
+        <div class="pricing-star" style="top: 45%; left: 60%; animation-delay: 3.5s;"></div>
+      </div>
+      <div class="pricing-gradient-rotate"></div>
+      <div class="container">
+        <div class="pricing-header">
+          <span class="section-tag-pricing">
+            <i class="fas fa-tag"></i> Pricing
+          </span>
+          <h2 class="section-title-pricing">Simple, transparent <span class="gradient-text">pricing</span> for every institution</h2>
+          <p class="pricing-subtitle">Choose the perfect plan for your university's needs. Scale as you grow.</p>
+        </div>
+
+        <div class="billing-toggle">
+          <span class="toggle-label monthly-label active">Monthly</span>
+          <div class="toggle-switch" id="billingToggle">
+            <div class="toggle-slider"></div>
+          </div>
+          <span class="toggle-label yearly-label">Yearly <span class="save-badge">Save 20%</span></span>
+        </div>
+
+        <div class="pricing-grid">
+          <div class="pricing-card" data-plan="basic">
+            <div class="plan-badge">For Small Departments</div>
+            <div class="plan-icon"><i class="fas fa-graduation-cap"></i></div>
+            <h3 class="plan-name">Basic Plan</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price monthly-price">49</span>
+              <span class="price yearly-price hidden">39</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="plan-description">Perfect for small departments and individual faculties.</p>
+            <div class="plan-features">
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Up to 50 users</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Basic Analytics Dashboard</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Attendance Tracking</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Quiz & Assignment Management</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Email Support</span></div>
+              <div class="feature-item disabled"><i class="fas fa-times-circle"></i><span>AI-Powered Insights</span></div>
+              <div class="feature-item disabled"><i class="fas fa-times-circle"></i><span>Internship Matching</span></div>
+              <div class="feature-item disabled"><i class="fas fa-times-circle"></i><span>Priority Support</span></div>
+            </div>
+            <button class="plan-btn" onclick="selectPlan('basic')">Get Started <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <div class="pricing-card popular" data-plan="advanced">
+            <div class="popular-badge"><i class="fas fa-star"></i> Most Popular</div>
+            <div class="plan-badge">For Medium Institutions</div>
+            <div class="plan-icon"><i class="fas fa-university"></i></div>
+            <h3 class="plan-name">Advanced Plan</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price monthly-price">149</span>
+              <span class="price yearly-price hidden">119</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="plan-description">Ideal for medium-sized universities and colleges.</p>
+            <div class="plan-features">
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Up to 200 users</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Advanced Analytics Dashboard</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Attendance Tracking + Reports</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Quiz & Assignment Management</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>AI-Powered Early Warning System</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Risk Prediction Models</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Internship Matching</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Email & Chat Support</span></div>
+            </div>
+            <button class="plan-btn" onclick="selectPlan('advanced')">Get Started <i class="fas fa-arrow-right"></i></button>
+          </div>
+
+          <div class="pricing-card" data-plan="premium">
+            <div class="plan-badge">For Large Universities</div>
+            <div class="plan-icon"><i class="fas fa-globe"></i></div>
+            <h3 class="plan-name">Premium Plan</h3>
+            <div class="plan-price">
+              <span class="currency">$</span>
+              <span class="price monthly-price">299</span>
+              <span class="price yearly-price hidden">239</span>
+              <span class="period">/month</span>
+            </div>
+            <p class="plan-description">Complete solution for large institutions and districts.</p>
+            <div class="plan-features">
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Unlimited users</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Enterprise Analytics Dashboard</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Advanced Attendance + Biometrics</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Advanced Assignment Management</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Advanced AI-Powered Insights</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Custom Risk Prediction Models</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Premium Internship Matching</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>24/7 Priority Support</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Custom API Integration</span></div>
+              <div class="feature-item"><i class="fas fa-check-circle"></i><span>Dedicated Account Manager</span></div>
+            </div>
+            <button class="plan-btn" onclick="selectPlan('premium')">Contact Sales <i class="fas fa-arrow-right"></i></button>
+          </div>
+        </div>
+
+        <div class="user-tier-info">
+          <div class="info-card"><i class="fas fa-users"></i><h4>Flexible User Tiers</h4><p>Basic: 50 users | Advanced: 200 users | Premium: Unlimited</p><span class="info-note">Additional users available as add-ons</span></div>
+          <div class="info-card"><i class="fas fa-clock"></i><h4>Subscription Duration</h4><p>Monthly or Yearly (Save 20% with yearly billing)</p><span class="info-note">Cancel anytime • No hidden fees</span></div>
+        </div>
+
+        <div class="pricing-faq"><p>Have questions about pricing? <a href="#contact">Contact our sales team</a> for a custom quote.</p></div>
+      </div>
+      <!-- Toast container -->
+      <div id="toast" class="toast-notification" style="display: none;">✨ Message sent! We'll reply soon.</div>  
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-modern">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-left">
+            <i class="fas fa-comment-dots"></i>
+            <h3>Let's talk</h3>
+            <p>Ready to transform your institution's early warning system? Reach out, and we'll get back within 24h.</p>
+            <div class="contact-info"><i class="fas fa-envelope"></i> hello@edupulse.com</div>
+          </div>
+          <div class="contact-right">
+            <input type="text" placeholder="Full name" id="contactName">
+            <input type="email" placeholder="Email address" id="contactEmail">
+            <input type="text" placeholder="University / Organization" id="contactOrg">
+            <textarea rows="3" placeholder="How can we help?" id="contactMsg"></textarea>
+            <button onclick="handleContactSubmit()">Send message <i class="fas fa-paper-plane"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <span class="logo">EduPulse</span>
+        <p>© 2026 EduPulse — early warning, lasting success.</p>
+        <div class="social-icons"><a href="#"><i class="fab fa-linkedin-in"></i></a><a href="#"><i class="fab fa-twitter"></i></a><a href="#"><i class="fab fa-github"></i></a></div>
+      </div>
+      <div class="footer-links">
+        <div><a href="#home">Home</a><a href="#about">About</a><a href="#how-it-works">How it works</a></div>
+        <div><a href="#for-whom">For whom</a><a href="#pricing">Pricing</a><a href="#contact">Contact</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="toast" class="toast-notification">✨ Message sent! We'll reply soon.</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
